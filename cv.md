@@ -13,7 +13,6 @@
 * Designers Tools: Adobe Photoshop, Adobe Illustrator, Figma
 ## Code examples
 https://github.com/alyanoyigor/shooting-game-canvas-pureJS
-https://github.com/alyanoyigor/social-network-react-app
 ## Work experience
 * Social Network Pet Project
 * Shooting game with html canvas, css, js
