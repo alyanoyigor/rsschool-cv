@@ -248,3 +248,17 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
+footer {
+  margin-top: 50px;
+  display: block;
+  text-align: center;
+}
+footer img {
+  width: 100px;
+  height: 100px;
+}
+footer h5 {
+  font-weight: 600;
+  line-height: 1.5em;
+}
