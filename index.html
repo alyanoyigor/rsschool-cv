@@ -5,17 +5,30 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- For all browsers -->
+   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+
+   <!-- For Google and Android -->
+   <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon/favicon-48x48.png">
+   <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/favicon-192x192.png">
+
+   <!-- For iPad -->
+   <link rel="apple-touch-icon" type="image/png" sizes="167x167" href="assets/favicon/favicon-167x167.png">
+   <!-- For iPhone -->
+   <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="assets/favicon/favicon-180x180.png">
+
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/vs.min.css">
    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
    <link rel="stylesheet" href="css/reset.css">
    <link rel="stylesheet" href="css/style.css">
    <link rel="stylesheet" href="css/media.css">
-   <title>Igor Alyanoy CV</title>
+   <title>Igor Alyanoy</title>
 </head>
 
 <body>
    <div class="general-container">
-      <header class="header" id="header">
+      <header class="header" id="about-me">
          <div class="container">
             <div class="header__inner">
                <nav class="menu">
@@ -23,16 +36,16 @@
                      <span></span>
                   </button>
                   <ul class="menu__list">
+                     <li class="menu__item"><a href="#education" class="menu__link">Education</a></li>
+                     <li class="menu__item"><a href="#video-presentation" class="menu__link">Video
+                           presentation</a></li>
                      <li class="menu__item"><a href="#skills" class="menu__link">Skills</a></li>
                      <li class="menu__item"><a href="#work-experience" class="menu__link">Work
                            experience</a>
                      </li>
-                     <li class="menu__item"><a href="#english" class="menu__link">English</a></li>
-                     <li class="menu__item"><a href="#education" class="menu__link">Education</a></li>
                      <li class="menu__item"><a href="#code-examples" class="menu__link">Code examples</a>
                      </li>
-                     <li class="menu__item"><a href="#video-presentation" class="menu__link">Video
-                           presentation</a></li>
+                     <li class="menu__item"><a href="#english" class="menu__link">English</a></li>
                      <li class="menu__item"><a href="#contacts" class="menu__link">Contacts</a></li>
                   </ul>
                </nav>
@@ -51,7 +64,7 @@
                         I
                         could develop cool software.</p>
                      <div class="header__buttons">
-                        <a href="mailto: igoralyanoy@gmail.com" class="header__btn header__btn_email"
+                        <a href="mailto:igoralyanoy@gmail.com" class="header__btn header__btn_email"
                            target="_blank"><span>Email me</span><svg width="12" height="12" viewBox="0 0 12 12"
                               fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path d="M4 2L8 6L4 10" stroke="white" stroke-width="1.5" stroke-linecap="round" />
@@ -108,7 +121,7 @@
                   <h2 class="title video-presentation__title">Video presentation</h2>
                   <div class="video-presentation__wrapper">
                      <iframe class="video-presentation__video" width="1060" height="596"
-                        src="https://www.youtube.com/embed/lpcpsCY4Mco" title="YouTube video player" frameborder="0"
+                        src="https://www.youtube.com/embed/vT3GUKuAzIs" title="YouTube video player"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                   </div>
@@ -139,22 +152,30 @@
                         <li class="skills__list-item"><img src="assets/svg/formik.svg" alt="Formik" class="skills__img">
                         </li>
 
-                        <li class="skills__list-item skills__list-item_hide"><img src="assets/svg/html.svg" alt="HTML" class="skills__img">
-                        </li>
-                        <li class="skills__list-item skills__list-item_hide"><img src="assets/svg/css.svg" alt="CSS" class="skills__img"></li>
-                        <li class="skills__list-item skills__list-item_hide"><img src="assets/svg/sass.svg" alt="SASS/SCSS"
+                        <li class="skills__list-item skills__list-item_hide"><img src="assets/svg/html.svg" alt="HTML"
                               class="skills__img">
                         </li>
-                        <li class="skills__list-item skills__list-item_hide"><img src="assets/svg/figma.svg" alt="Figma" class="skills__img">
+                        <li class="skills__list-item skills__list-item_hide"><img src="assets/svg/css.svg" alt="CSS"
+                              class="skills__img"></li>
+                        <li class="skills__list-item skills__list-item_hide"><img src="assets/svg/sass.svg"
+                              alt="SASS/SCSS" class="skills__img">
                         </li>
-                        <li class="skills__list-item skills__list-item_hide"><img src="assets/svg/JavaScript.svg" alt="JS" class="skills__img">
+                        <li class="skills__list-item skills__list-item_hide"><img src="assets/svg/figma.svg" alt="Figma"
+                              class="skills__img">
                         </li>
-                        <li class="skills__list-item skills__list-item_hide"><img src="assets/svg/git.svg" alt="Git" class="skills__img"></li>
-                        <li class="skills__list-item skills__list-item_hide"><img src="assets/svg/React.svg" alt="React" class="skills__img">
+                        <li class="skills__list-item skills__list-item_hide"><img src="assets/svg/JavaScript.svg"
+                              alt="JS" class="skills__img">
                         </li>
-                        <li class="skills__list-item skills__list-item_hide"><img src="assets/svg/redux.svg" alt="Redux" class="skills__img">
+                        <li class="skills__list-item skills__list-item_hide"><img src="assets/svg/git.svg" alt="Git"
+                              class="skills__img"></li>
+                        <li class="skills__list-item skills__list-item_hide"><img src="assets/svg/React.svg" alt="React"
+                              class="skills__img">
                         </li>
-                        <li class="skills__list-item skills__list-item_hide"><img src="assets/svg/formik.svg" alt="Formik" class="skills__img">
+                        <li class="skills__list-item skills__list-item_hide"><img src="assets/svg/redux.svg" alt="Redux"
+                              class="skills__img">
+                        </li>
+                        <li class="skills__list-item skills__list-item_hide"><img src="assets/svg/formik.svg"
+                              alt="Formik" class="skills__img">
                         </li>
                      </ul>
                   </div>
@@ -293,36 +314,39 @@ class MonthReport {
                               </svg>
                            </a></li>
                      </ul>
-                     <a href="mailto: igoralyanoy@gmail.com" class="contacts__btn header__btn">Email me</a>
+                     <a href="mailto:igoralyanoy@gmail.com" class="contacts__btn header__btn">Email me</a>
                   </div>
                </div>
             </div>
          </section>
       </main>
-      <a href="#header" class="to-top-btn"></a>
       <footer class="footer">
          <div class="container">
             <div class="footer__inner">
-               <aside class="footer__text">
+               <article class="footer__text">
                   <h4 class="footer__text-title">© 2021 by Igor Alyanoy</h4>
                   <a class="footer__link-img"><img class="footer__img" src="assets/svg/github.svg" alt="GitHub"></a>
-               </aside>
+               </article>
                <a href="https://rs.school/" target="_blank" class="rolling-scopes-link"><img
                      src="assets/svg/rs_school_js.svg" alt="Rolling Scopes School"></a>
                <div class="footer__menu">
                   <ul class="footer__menu-list">
                      <li class="footer__menu-item"><a href="#about-me" class="footer__menu-link">About me</a></li>
+                     <li class="footer__menu-item"><a href="#education" class="footer__menu-link">Education</a></li>
+                     <li class="footer__menu-item"><a href="#video-presentation" class="footer__menu-link">Video
+                           presentation</a></li>
                      <li class="footer__menu-item"><a href="#skills" class="footer__menu-link">Skills</a></li>
+
+
+                  </ul>
+                  <ul class="footer__menu-list">
                      <li class="footer__menu-item"><a href="#work-experience" class="footer__menu-link">Work
                            experience</a>
                      </li>
-                     <li class="footer__menu-item"><a href="#education" class="footer__menu-link">Education</a></li>
-                  </ul>
-                  <ul class="footer__menu-list">
                      <li class="footer__menu-item"><a href="#code-examples" class="footer__menu-link">Code examples</a>
                      </li>
-                     <li class="footer__menu-item"><a href="#video-presentation" class="footer__menu-link">Video
-                           presentation</a></li>
+                     <li class="footer__menu-item"><a href="#english" class="footer__menu-link">English</a>
+                     </li>
                      <li class="heder__footer__menu-item"><a href="#contacts" class="footer__menu-link">Contacts</a>
                      </li>
                   </ul>
