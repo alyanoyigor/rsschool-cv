@@ -1,366 +1,602 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- For all browsers -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
 
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!-- For all browsers -->
-   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <!-- For Google and Android -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="48x48"
+      href="assets/favicon/favicon-48x48.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="assets/favicon/favicon-192x192.png"
+    />
 
-   <!-- For Google and Android -->
-   <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon/favicon-48x48.png">
-   <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/favicon-192x192.png">
+    <!-- For iPad -->
+    <link
+      rel="apple-touch-icon"
+      type="image/png"
+      sizes="167x167"
+      href="assets/favicon/favicon-167x167.png"
+    />
+    <!-- For iPhone -->
+    <link
+      rel="apple-touch-icon"
+      type="image/png"
+      sizes="180x180"
+      href="assets/favicon/favicon-180x180.png"
+    />
 
-   <!-- For iPad -->
-   <link rel="apple-touch-icon" type="image/png" sizes="167x167" href="assets/favicon/favicon-167x167.png">
-   <!-- For iPhone -->
-   <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="assets/favicon/favicon-180x180.png">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <title>Igor Alyanoy</title>
+  </head>
 
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/vs.min.css">
-   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-   <link rel="stylesheet" href="css/reset.css">
-   <link rel="stylesheet" href="css/style.css">
-   <link rel="stylesheet" href="css/media.css">
-   <title>Igor Alyanoy</title>
-</head>
-
-<body>
-   <div class="general-container">
-      <header class="header" id="about-me">
-         <div class="container">
-            <div class="header__inner">
-               <nav class="menu">
-                  <button class="menu__btn">
-                     <span></span>
-                  </button>
-                  <ul class="menu__list">
-                     <li class="menu__item"><a href="#education" class="menu__link">Education</a></li>
-                     <li class="menu__item"><a href="#video-presentation" class="menu__link">Video
-                           presentation</a></li>
-                     <li class="menu__item"><a href="#skills" class="menu__link">Skills</a></li>
-                     <li class="menu__item"><a href="#work-experience" class="menu__link">Work
-                           experience</a>
-                     </li>
-                     <li class="menu__item"><a href="#code-examples" class="menu__link">Code examples</a>
-                     </li>
-                     <li class="menu__item"><a href="#english" class="menu__link">English</a></li>
-                     <li class="menu__item"><a href="#contacts" class="menu__link">Contacts</a></li>
-                  </ul>
-               </nav>
-
-               <div class="header__box">
-                  <div class="header__content">
-                     <h2 class="header__subtitle">Hi, I’m Igor</h2>
-                     <h1 class="header__title">Frontend Developer</h1>
-                     <p class="header__text">I’m a hardworking and dedicated beginning Frontend Developer with a keen
-                        eye
-                        for
-                        detail, and a determination to deliver the very highest quality. I always try to better myself
-                        with
-                        every project I work on. Now I am looking for a team of friendly and talented developers with
-                        whom
-                        I
-                        could develop cool software.</p>
-                     <div class="header__buttons">
-                        <a href="mailto:igoralyanoy@gmail.com" class="header__btn header__btn_email"
-                           target="_blank"><span>Email me</span><svg width="12" height="12" viewBox="0 0 12 12"
-                              fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M4 2L8 6L4 10" stroke="white" stroke-width="1.5" stroke-linecap="round" />
-                           </svg>
-                        </a>
-                        <a href="" class="header__btn header__btn_cv">Download CV</a>
-                     </div>
-                  </div>
-                  <img src="assets/my-photo.jpg" alt="Igor Alyanoy" class="header__img">
-               </div>
+  <body>
+    <header class="header" id="about-me">
+      <div class="container">
+        <div class="header__inner">
+          <nav class="menu">
+            <button class="menu__btn">
+              <span></span>
+            </button>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#education" class="menu__link">Education</a>
+              </li>
+              <li class="menu__item">
+                <a href="#skills" class="menu__link">Skills</a>
+              </li>
+              <li class="menu__item">
+                <a href="#work-experience" class="menu__link"
+                  >Work experience</a
+                >
+              </li>
+              <li class="menu__item">
+                <a href="#contacts" class="menu__link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__box">
+            <div class="header__content">
+              <h2 class="header__subtitle">Hi, I’m Igor</h2>
+              <h1 class="header__title">Frontend Developer</h1>
+              <p class="header__text">
+                I’m a hardworking and dedicated beginning Frontend Developer
+                with a keen eye for detail, and a determination to deliver the
+                very highest quality. I always try to better myself with every
+                project I work on. Now I am looking for a team of friendly and
+                talented developers with whom I could develop cool software.
+              </p>
+              <div class="header__buttons">
+                <a
+                  href="mailto:igoralyanoy@gmail.com"
+                  class="header__btn header__btn_email"
+                  target="_blank"
+                  ><span>Email me</span
+                  ><svg
+                    width="12"
+                    height="12"
+                    viewBox="0 0 12 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4 2L8 6L4 10"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="./assets/CV_2022.pdf"
+                  download="Igor Alyanoy CV"
+                  class="header__btn header__btn_cv"
+                  >Download CV</a
+                >
+              </div>
             </div>
-         </div>
-      </header>
-
-      <div class="top-gradient">
-         <img src="assets/hero_gradient.png" alt="Top Gradient" class="top-gradient-img">
+            <div class="header__img-container">
+              <img
+                src="./assets/img/my-photo.jpg"
+                alt="Igor Alyanoy"
+                class="header__img"
+              />
+              <span class="circle"></span>
+            </div>
+          </div>
+        </div>
       </div>
-      <main class="main">
-         <section class="education" id="education">
-            <div class="container">
-               <div class="education__inner">
-                  <h2 class="title education__title">Education</h2>
-                  <h3 class="title-description education__description">I really like learning something, especially
-                     programming. Every day I devote a lot of time to learn something new or to repeat what I have
-                     already
-                     learned. </h3>
-                  <div class="education__content">
-                     <ul class="education__list">
-                        <li class="education__item"><a href="https://rs.school/" class="education__link"
-                              target="_blank">The Rolling Scopes
-                              «JavaScript/Front-end» (studying now)</a></li>
-                        <li class="education__item"><a href="https://app.rs.school/certificate/2gwh13us"
-                              class="education__link" target="_blank">The Rolling Scopes JS/FE PRE-SCHOOL</a></li>
-                        <li class="education__item"><a
-                              href="https://testprovider.com/ru/search-certificate/TP21189094   "
-                              class="education__link" target="_blank">ITVDN Git Basics
-                           </a></li>
-                        <li class="education__item"><a
-                              href="https://testprovider.com/ru/search-certificate/TP01804596  " class="education__link"
-                              target="_blank">ITVDN JavaScript Basic
-                           </a></li>
-                        <li class="education__item"><a href="https://testprovider.com/ru/search-certificate/TP26685618 "
-                              class="education__link" target="_blank">ITVDN JavaScript Starter
-                           </a></li>
-                     </ul>
-                     <img src="assets/education-thunder.png" alt="Education Star" class="education__img">
+    </header>
+
+    <div class="top-gradient">
+      <img
+        src="./assets/bg/hero_gradient.png"
+        alt="Top Gradient"
+        class="top-gradient-img"
+      />
+    </div>
+    <main class="main">
+      <section class="education" id="education">
+        <div class="container">
+          <div class="education__inner">
+            <h2 class="title education__title">Education</h2>
+            <h3 class="title-description education__description">
+              I really like learning something, especially programming. Every
+              day I devote a lot of time to learn something new or to repeat
+              what I have already learned.
+            </h3>
+            <div class="education__content">
+              <ul class="education__list">
+                <li class="education__item">
+                  <a
+                    href="https://app.rs.school/certificate/mghpu0xl"
+                    class="education__link"
+                    target="_blank"
+                    >The Rolling Scopes «JavaScript/Front-end»</a
+                  >
+                </li>
+                <li class="education__item">
+                  <a
+                    href="https://app.rs.school/certificate/2gwh13us"
+                    class="education__link"
+                    target="_blank"
+                    >The Rolling Scopes JS/FE PRE-SCHOOL</a
+                  >
+                </li>
+                <li class="education__item">
+                  <a
+                    href="https://testprovider.com/ru/search-certificate/tp93650471"
+                    class="education__link"
+                    target="_blank"
+                    >React Essential
+                  </a>
+                </li>
+                <li class="education__item">
+                  <a
+                    href="https://testprovider.com/ru/search-certificate/TP01804596"
+                    class="education__link"
+                    target="_blank"
+                    >ITVDN JavaScript Basic
+                  </a>
+                </li>
+                <li class="education__item">
+                  <a
+                    href="https://testprovider.com/ru/search-certificate/tp46338714"
+                    class="education__link"
+                    target="_blank"
+                    >ITVDN TypeScript Fundamentals
+                  </a>
+                </li>
+              </ul>
+              <div class="education__img-container">
+                <img
+                  src="./assets/certificate.png"
+                  alt="certificate"
+                  class="education__img"
+                />
+                <span class="rectangle"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="skills" id="skills">
+        <div class="container">
+          <div class="skills__inner">
+            <h2 class="title title-black skills__title">Skills</h2>
+            <div class="skills__box">
+              <ul class="skills__list">
+                <li class="skills__list-item">
+                  <img
+                    src="assets/svg/React.svg"
+                    alt="React"
+                    class="skills__img"
+                  />
+                </li>
+                <li class="skills__list-item">
+                  <img
+                    src="assets/svg/JavaScript.svg"
+                    alt="JS"
+                    class="skills__img"
+                  />
+                </li>
+                <li class="skills__list-item">
+                  <img
+                    src="assets/svg/Typescript.svg"
+                    alt="TypeScript"
+                    class="skills__img"
+                  />
+                </li>
+                <li class="skills__list-item">
+                  <img
+                    src="assets/svg/eslint.svg"
+                    alt="Eslint"
+                    class="skills__img"
+                  />
+                </li>
+                <li class="skills__list-item">
+                  <img
+                    src="assets/svg/html.svg"
+                    alt="HTML"
+                    class="skills__img"
+                  />
+                </li>
+                <li class="skills__list-item">
+                  <img src="assets/svg/css.svg" alt="CSS" class="skills__img" />
+                </li>
+                <li class="skills__list-item">
+                  <img
+                    src="assets/svg/sass.svg"
+                    alt="SASS/SCSS"
+                    class="skills__img"
+                  />
+                </li>
+                <li class="skills__list-item">
+                  <img
+                    src="assets/svg/figma.svg"
+                    alt="Figma"
+                    class="skills__img"
+                  />
+                </li>
+                <li class="skills__list-item">
+                  <img src="assets/svg/git.svg" alt="Git" class="skills__img" />
+                </li>
+                <li class="skills__list-item">
+                  <img
+                    src="assets/svg/jest.svg"
+                    alt="jest"
+                    class="skills__img"
+                  />
+                </li>
+                <li class="skills__list-item">
+                  <img
+                    src="assets/svg/Prettier.svg"
+                    alt="Prettier"
+                    class="skills__img"
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="work-experience" id="work-experience">
+        <div class="container">
+          <div class="work-experience__inner">
+            <h2 class="title title-black work-experience__title">
+              Work experience
+            </h2>
+            <div class="slider swiper-container">
+              <div class="slider__list swiper-wrapper">
+                <div class="slider__item slider__item_rslang swiper-slide">
+                  <div class="slider__item-text-container">
+                    <div class="slider__item-text">
+                      <h3 class="slider__item-title">RS Lang</h3>
+                      <p class="slider__item-description">
+                        RS Lang is an English learning app. My teamand I worked
+                        together to create it. The collaboration was organized
+                        using GitHubProjects with Kanban methodology
+                      </p>
+                      <a
+                        href="https://github.com/alyanoyigor/rslang"
+                        class="slider__item-btn"
+                        target="_blank"
+                        >View More</a
+                      >
+                    </div>
                   </div>
-               </div>
-            </div>
-         </section>
-         <section class="video-presentation" id="video-presentation">
-            <div class="container">
-               <div class="video-presentation__inner">
-                  <h2 class="title video-presentation__title">Video presentation</h2>
-                  <div class="video-presentation__wrapper">
-                     <iframe class="video-presentation__video" width="1060" height="596"
-                        src="https://www.youtube.com/embed/vT3GUKuAzIs" title="YouTube video player"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+                </div>
+                <div
+                  class="slider__item slider__item_christmas-game swiper-slide"
+                >
+                  <div class="slider__item-text-container">
+                    <div class="slider__item-text">
+                      <h3 class="slider__item-title">Christmas Game</h3>
+                      <p class="slider__item-description">
+                        With this application, you can plunge into the
+                        pre-Christmas atmosphere and help your grandmother
+                        choose toys
+                      </p>
+                      <a
+                        href="https://github.com/alyanoyigor/christmas-game"
+                        class="slider__item-btn"
+                        target="_blank"
+                        >View More</a
+                      >
+                    </div>
                   </div>
-               </div>
-            </div>
-         </section>
-         <section class="skills" id="skills">
-            <div class="container">
-               <div class="skills__inner">
-                  <h2 class="title title-black skills__title">Skills</h2>
-                  <div class="skills__box">
-                     <ul class="skills__list">
-                        <li class="skills__list-item"><img src="assets/svg/html.svg" alt="HTML" class="skills__img">
-                        </li>
-                        <li class="skills__list-item"><img src="assets/svg/css.svg" alt="CSS" class="skills__img"></li>
-                        <li class="skills__list-item"><img src="assets/svg/sass.svg" alt="SASS/SCSS"
-                              class="skills__img">
-                        </li>
-                        <li class="skills__list-item"><img src="assets/svg/figma.svg" alt="Figma" class="skills__img">
-                        </li>
-                        <li class="skills__list-item"><img src="assets/svg/JavaScript.svg" alt="JS" class="skills__img">
-                        </li>
-                        <li class="skills__list-item"><img src="assets/svg/git.svg" alt="Git" class="skills__img"></li>
-                        <li class="skills__list-item"><img src="assets/svg/React.svg" alt="React" class="skills__img">
-                        </li>
-                        <li class="skills__list-item"><img src="assets/svg/redux.svg" alt="Redux" class="skills__img">
-                        </li>
-                        <li class="skills__list-item"><img src="assets/svg/formik.svg" alt="Formik" class="skills__img">
-                        </li>
-
-                        <li class="skills__list-item skills__list-item_hide"><img src="assets/svg/html.svg" alt="HTML"
-                              class="skills__img">
-                        </li>
-                        <li class="skills__list-item skills__list-item_hide"><img src="assets/svg/css.svg" alt="CSS"
-                              class="skills__img"></li>
-                        <li class="skills__list-item skills__list-item_hide"><img src="assets/svg/sass.svg"
-                              alt="SASS/SCSS" class="skills__img">
-                        </li>
-                        <li class="skills__list-item skills__list-item_hide"><img src="assets/svg/figma.svg" alt="Figma"
-                              class="skills__img">
-                        </li>
-                        <li class="skills__list-item skills__list-item_hide"><img src="assets/svg/JavaScript.svg"
-                              alt="JS" class="skills__img">
-                        </li>
-                        <li class="skills__list-item skills__list-item_hide"><img src="assets/svg/git.svg" alt="Git"
-                              class="skills__img"></li>
-                        <li class="skills__list-item skills__list-item_hide"><img src="assets/svg/React.svg" alt="React"
-                              class="skills__img">
-                        </li>
-                        <li class="skills__list-item skills__list-item_hide"><img src="assets/svg/redux.svg" alt="Redux"
-                              class="skills__img">
-                        </li>
-                        <li class="skills__list-item skills__list-item_hide"><img src="assets/svg/formik.svg"
-                              alt="Formik" class="skills__img">
-                        </li>
-                     </ul>
+                </div>
+                <div class="slider__item slider__item_art-quiz swiper-slide">
+                  <div class="slider__item-text-container">
+                    <div class="slider__item-text">
+                      <h3 class="slider__item-title">Art Quiz</h3>
+                      <p class="slider__item-description">
+                        Test your knowledge of famous artists' masterpieces with
+                        Art Quiz App!
+                      </p>
+                      <a
+                        href="https://github.com/alyanoyigor/art-quiz"
+                        class="slider__item-btn"
+                        target="_blank"
+                        >View More</a
+                      >
+                    </div>
                   </div>
-               </div>
-            </div>
-         </section>
-         <section class="work-experience" id="work-experience">
-            <div class="container">
-               <div class="work-experience__inner">
-                  <h2 class="title title-black work-experience__title">Work experience</h2>
-                  <div class="slider swiper-container">
-                     <div class="slider__list swiper-wrapper">
-                        <div class="slider__item swiper-slide">
-                           <img src="assets/museum.jpg" alt="Vertical Slider" class="slider__item-img">
-                           <div class="slider__item-text">
-                              <h3 class="slider__item-title">Museum</h3>
-                              <p class="slider__item-description">The responsive landing page of the Louvre Museum - one
-                                 of the largest and most popular art museums in the world. Stack
-                                 - HTML, CSS, JS.</p>
-                              <a href="https://rolling-scopes-school.github.io/alyanoyigor-JSFE2021Q3/museum-dom/"
-                                 class="slider__item-btn" target="_blank">View More</a>
-                           </div>
-                        </div>
-
-                        <div class="slider__item swiper-slide">
-                           <img src="assets/momentum.jpg" alt="Vertical Slider" class="slider__item-img">
-                           <div class="slider__item-text">
-                              <h3 class="slider__item-title">Momentum</h3>
-                              <p class="slider__item-description">The prototype of project was chrome extension
-                                 'Momentum'. I used webpack in this project. Stack
-                                 - HTML, CSS, JS.</p>
-                              <a href="https://rolling-scopes-school.github.io/alyanoyigor-JSFE2021Q3/momentum/dist/"
-                                 class="slider__item-btn" target="_blank">View More</a>
-                           </div>
-                        </div>
-
-                        <div class="slider__item swiper-slide">
-                           <img src="assets/space-landing-page.jpg" alt="Video Player" class="slider__item-img">
-                           <div class="slider__item-text">
-                              <h3 class="slider__item-title">Space landing page</h3>
-                              <p class="slider__item-description">Responsive landing page with HTML, SCSS and just
-                                 a little JS.
-                              </p>
-                              <a href="https://alyanoyigor.github.io/study_space-landing-page/" class="slider__item-btn"
-                                 target="_blank">View More</a>
-                           </div>
-                        </div>
-
-                        <div class="slider__item swiper-slide">
-                           <img src="assets/shooter.jpg" alt="Video Player" class="slider__item-img">
-                           <div class="slider__item-text">
-                              <h3 class="slider__item-title">Shooter game</h3>
-                              <p class="slider__item-description">The game was written by using classes and inheritance.
-                                 Stack - HTML, CSS, JavaScript.
-                              </p>
-                              <a href="https://alyanoyigor.github.io/shooting-game-canvas-pureJS/"
-                                 class="slider__item-btn" target="_blank">View More</a>
-                           </div>
-                        </div>
-                     </div>
+                </div>
+                <div class="slider__item slider__item_momentum swiper-slide">
+                  <div class="slider__item-text-container">
+                    <div class="slider__item-text">
+                      <h3 class="slider__item-title">Momentum</h3>
+                      <p class="slider__item-description">
+                        The Momentum Project is an implementation of the
+                        Momentum extension in the Google Chrome Web Store with
+                        additional features
+                      </p>
+                      <a
+                        href="https://github.com/alyanoyigor/momentum"
+                        class="slider__item-btn"
+                        target="_blank"
+                        >View More</a
+                      >
+                    </div>
                   </div>
-               </div>
-            </div>
-         </section>
-         <div class="bottom-gradient">
-            <img src="assets/hero_gradient.png" alt="Bottom Gradient" class="bottom-gradient-img">
-         </div>
-         <section class="code-examples" id="code-examples">
-            <div class="container">
-               <div class="code-examples__inner">
-                  <h2 class="title title-black code-examples-title">Code examples</h2>
-                  <pre><code class="language-javascript">
-class MonthReport {
-   constructor(month, amount, users) {
-      this.month = month;
-      this.amount = amount;
-      this.users = users;
-   }
-   render(element) {
-      let html = Mustache.render(template, this);
-      element.insertAdjacentHTML("beforeend", html);
-   }
-}
-</code></pre>
-               </div>
-            </div>
-         </section>
-         <section class="english" id="english">
-            <div class="container">
-               <div class="english__inner">
-                  <h2 class="title english-title">English</h2>
-                  <h3 class="title-description english__title-description">My level of English - Intermediate</h3>
-                  <img src="assets/increase.png" alt="Increase">
-               </div>
-            </div>
-         </section>
-         <section class="contacts" id="contacts">
-            <div class="container">
-               <div class="contacts__inner">
-                  <h2 class="title">Contacts</h2>
-                  <div class="contacts__box">
-                     <ul class="contacts__list">
-                        <li class="contacts__list-item"><a href="https://github.com/alyanoyigor"
-                              class="contacts__list-link" target="_blank">
-                              <svg width="64" height="64" viewBox="0 0 64 64" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                 <path
-                                    d="M32 14C22.061 14 14 22.0595 14 32C14 39.953 19.157 46.7 26.3105 49.0805C27.209 49.247 27.5 48.689 27.5 48.215V44.864C22.493 45.953 21.4505 42.74 21.4505 42.74C20.6315 40.6595 19.451 40.106 19.451 40.106C17.8175 38.9885 19.5755 39.0125 19.5755 39.0125C21.383 39.1385 22.334 40.868 22.334 40.868C23.939 43.619 26.5445 42.824 27.572 42.3635C27.7325 41.201 28.199 40.406 28.715 39.9575C24.7175 39.5 20.5145 37.9565 20.5145 31.061C20.5145 29.0945 21.218 27.4895 22.3685 26.2295C22.1825 25.775 21.566 23.9435 22.544 21.4655C22.544 21.4655 24.056 20.9825 27.4955 23.3105C28.931 22.9115 30.47 22.712 32 22.7045C33.53 22.712 35.0705 22.9115 36.509 23.3105C39.9455 20.9825 41.4545 21.4655 41.4545 21.4655C42.434 23.945 41.8175 25.7765 41.6315 26.2295C42.7865 27.4895 43.484 29.096 43.484 31.061C43.484 37.9745 39.2735 39.497 35.2655 39.9425C35.9105 40.5005 36.5 41.5955 36.5 43.2755V48.215C36.5 48.6935 36.788 49.256 37.7015 49.079C44.849 46.6955 50 39.95 50 32C50 22.0595 41.9405 14 32 14Z"
-                                    fill="#fff" />
-                              </svg>
-                           </a></li>
-                        <li class="contacts__list-item"><a href="https://t.me/alyanoyigor" class="contacts__list-link"
-                              target="_blank">
-                              <svg width="64" height="64" viewBox="0 0 64 64" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                 <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M32 15C41.3889 15 49 22.6111 49 32C49 41.3889 41.3889 49 32 49C22.6111 49 15 41.3889 15 32C15 22.6111 22.6111 15 32 15ZM40.1823 24.3029L37.1494 39.5946C37.1494 39.5946 36.7252 40.655 35.5588 40.1458L28.581 34.6527C28.581 34.6527 36.3436 27.675 36.6616 27.3781C36.9797 27.0812 36.8737 27.0176 36.8737 27.0176C36.8948 26.657 36.301 27.0176 36.301 27.0176L26.0148 33.55L21.7306 32.1077C21.7306 32.1077 21.0731 31.8743 21.0095 31.3655C20.9459 30.8563 21.7518 30.5807 21.7518 30.5807L38.7827 23.8999C38.7827 23.8999 40.1823 23.2848 40.1823 24.3029ZM31.2434 36.8375L28.475 39.3615C28.475 39.3615 28.2585 39.5256 28.0218 39.4228L28.5519 34.7344L31.2434 36.8375Z"
-                                    fill="#fff" />
-                              </svg>
-                           </a></li>
-                        <li class="contacts__list-item"><a href="https://www.instagram.com/alyanoyigor/"
-                              class="contacts__list-link" target="_blank">
-                              <svg width="64" height="64" viewBox="0 0 64 64" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                 <path
-                                    d="M46.91 25.816C46.837 24.219 46.584 23.129 46.213 22.175C45.83 21.189 45.317 20.352 44.483 19.518C43.649 18.684 42.813 18.171 41.826 17.788C40.872 17.417 39.781 17.164 38.185 17.091C36.585 17.017 36.074 17 32 17C27.926 17 27.415 17.017 25.816 17.09C24.219 17.163 23.129 17.416 22.175 17.787C21.189 18.17 20.352 18.683 19.518 19.517C18.684 20.351 18.171 21.187 17.788 22.174C17.417 23.128 17.164 24.219 17.091 25.815C17.017 27.415 17 27.926 17 32C17 36.074 17.017 36.585 17.09 38.184C17.163 39.781 17.416 40.871 17.787 41.825C18.17 42.811 18.683 43.648 19.517 44.482C20.351 45.316 21.187 45.829 22.174 46.212C23.128 46.583 24.219 46.836 25.815 46.909C27.415 46.983 27.926 47 32 47C36.074 47 36.585 46.983 38.184 46.91C39.781 46.837 40.871 46.584 41.825 46.213C42.811 45.83 43.648 45.317 44.482 44.483C45.316 43.649 45.829 42.813 46.212 41.826C46.583 40.872 46.836 39.781 46.909 38.185C46.983 36.585 47 36.074 47 32C47 27.926 46.983 27.415 46.91 25.816ZM44.21 38.061C44.143 39.523 43.899 40.318 43.694 40.846C43.422 41.546 43.097 42.046 42.572 42.571C42.047 43.096 41.547 43.421 40.847 43.693C40.318 43.898 39.524 44.143 38.062 44.209C36.481 44.281 36.006 44.296 32.001 44.296C27.996 44.296 27.521 44.281 25.94 44.209C24.478 44.142 23.683 43.898 23.155 43.693C22.455 43.421 21.955 43.096 21.43 42.571C20.905 42.046 20.58 41.546 20.308 40.846C20.103 40.317 19.858 39.523 19.792 38.061C19.72 36.479 19.705 36.005 19.705 32C19.705 27.995 19.72 27.52 19.792 25.939C19.859 24.477 20.103 23.682 20.308 23.154C20.58 22.454 20.905 21.954 21.43 21.429C21.955 20.904 22.455 20.579 23.155 20.307C23.684 20.102 24.478 19.857 25.94 19.791C27.522 19.719 27.996 19.704 32.001 19.704C36.006 19.704 36.481 19.719 38.062 19.791C39.524 19.858 40.319 20.102 40.847 20.307C41.547 20.579 42.047 20.904 42.572 21.429C43.097 21.954 43.422 22.454 43.694 23.154C43.899 23.683 44.144 24.477 44.21 25.939C44.282 27.521 44.297 27.995 44.297 32C44.297 36.005 44.282 36.48 44.21 38.061ZM32 24.297C27.746 24.297 24.297 27.746 24.297 32C24.297 36.254 27.746 39.703 32 39.703C36.254 39.703 39.703 36.254 39.703 32C39.703 27.746 36.254 24.297 32 24.297ZM32 37C29.239 37 27 34.761 27 32C27 29.239 29.239 27 32 27C34.761 27 37 29.239 37 32C37 34.761 34.761 37 32 37ZM40.007 22.193C39.013 22.193 38.207 22.999 38.207 23.993C38.207 24.987 39.013 25.793 40.007 25.793C41.001 25.793 41.807 24.987 41.807 23.993C41.807 22.999 41.001 22.193 40.007 22.193Z"
-                                    fill="#fff" />
-                              </svg>
-                           </a></li>
-                        <li class="contacts__list-item"><a href="https://www.facebook.com/alyanoyigor"
-                              class="contacts__list-link" target="_blank">
-                              <svg width="64" height="64" viewBox="0 0 64 64" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                 <path
-                                    d="M34.1 47V33.3H38.7L39.4 28H34.1V24.6C34.1 23.1 34.5 22 36.7 22H39.5V17.2C39 17.1 37.3 17 35.4 17C31.3 17 28.5 19.5 28.5 24V28H24V33.3H28.6V47H34.1Z"
-                                    fill="#fff" />
-                              </svg>
-                           </a></li>
-                     </ul>
-                     <a href="mailto:igoralyanoy@gmail.com" class="contacts__btn header__btn">Email me</a>
+                </div>
+                <div class="slider__item slider__item_star-wars swiper-slide">
+                  <div class="slider__item-text-container">
+                    <div class="slider__item-text">
+                      <h3 class="slider__item-title">Star Wars App</h3>
+                      <p class="slider__item-description">
+                        Star Wars App is a test assignment for Company X
+                      </p>
+                      <a
+                        href="https://github.com/alyanoyigor/star-wars-app"
+                        class="slider__item-btn"
+                        target="_blank"
+                        >View More</a
+                      >
+                    </div>
                   </div>
-               </div>
+                </div>
+                <div class="slider__item slider__item_museum swiper-slide">
+                  <div class="slider__item-text-container">
+                    <div class="slider__item-text">
+                      <h3 class="slider__item-title">Museum Louvre</h3>
+                      <p class="slider__item-description">
+                        Landing page for one of the best museums in the world –
+                        Louvre
+                      </p>
+                      <a
+                        href="https://github.com/alyanoyigor/museum-louvre"
+                        class="slider__item-btn"
+                        target="_blank"
+                        >View More</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="slider__item slider__item_migration-to-ts swiper-slide"
+                >
+                  <div class="slider__item-text-container">
+                    <div class="slider__item-text">
+                      <h3 class="slider__item-title">Migration to TS</h3>
+                      <p class="slider__item-description">
+                        Education project for better understand typescript
+                      </p>
+                      <a
+                        href="https://github.com/alyanoyigor/migration-to-ts"
+                        class="slider__item-btn"
+                        target="_blank"
+                        >View More</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="slider__item slider__item_async-race swiper-slide">
+                  <div class="slider__item-text-container">
+                    <div class="slider__item-text">
+                      <h3 class="slider__item-title">Async race</h3>
+                      <p class="slider__item-description">
+                        Async Race is a SPA to manage the collection of the
+                        cars, operate its engines, and show races statistics
+                      </p>
+                      <a
+                        href="https://github.com/alyanoyigor/async-race"
+                        class="slider__item-btn"
+                        target="_blank"
+                        >View More</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
             </div>
-         </section>
-      </main>
-      <footer class="footer">
-         <div class="container">
-            <div class="footer__inner">
-               <article class="footer__text">
-                  <h4 class="footer__text-title">© 2021 by Igor Alyanoy</h4>
-                  <a class="footer__link-img" href="https://github.com/alyanoyigor"><img class="footer__img"
-                        src="assets/svg/github.svg" alt="GitHub"></a>
-               </article>
-               <a href="https://rs.school/" target="_blank" class="rolling-scopes-link"><img
-                     src="assets/svg/rs_school_js.svg" alt="Rolling Scopes School"></a>
-               <div class="footer__menu">
-                  <ul class="footer__menu-list">
-                     <li class="footer__menu-item"><a href="#about-me" class="footer__menu-link">About me</a></li>
-                     <li class="footer__menu-item"><a href="#education" class="footer__menu-link">Education</a></li>
-                     <li class="footer__menu-item"><a href="#video-presentation" class="footer__menu-link">Video
-                           presentation</a></li>
-                     <li class="footer__menu-item"><a href="#skills" class="footer__menu-link">Skills</a></li>
+          </div>
+        </div>
+      </section>
+      <div class="bottom-gradient">
+        <img
+          src="assets/bg/hero_gradient.png"
+          alt="Bottom Gradient"
+          class="bottom-gradient-img"
+        />
+      </div>
 
-
-                  </ul>
-                  <ul class="footer__menu-list">
-                     <li class="footer__menu-item"><a href="#work-experience" class="footer__menu-link">Work
-                           experience</a>
-                     </li>
-                     <li class="footer__menu-item"><a href="#code-examples" class="footer__menu-link">Code examples</a>
-                     </li>
-                     <li class="footer__menu-item"><a href="#english" class="footer__menu-link">English</a>
-                     </li>
-                     <li class="heder__footer__menu-item"><a href="#contacts" class="footer__menu-link">Contacts</a>
-                     </li>
-                  </ul>
-               </div>
+      <section class="contacts" id="contacts">
+        <div class="container">
+          <div class="contacts__inner">
+            <h2 class="title">Contacts</h2>
+            <div class="contacts__box">
+              <ul class="contacts__list">
+                <li class="contacts__list-item">
+                  <a
+                    href="https://github.com/alyanoyigor"
+                    class="contacts__list-link"
+                    target="_blank"
+                  >
+                    <svg
+                      width="64"
+                      height="64"
+                      viewBox="0 0 64 64"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M32 14C22.061 14 14 22.0595 14 32C14 39.953 19.157 46.7 26.3105 49.0805C27.209 49.247 27.5 48.689 27.5 48.215V44.864C22.493 45.953 21.4505 42.74 21.4505 42.74C20.6315 40.6595 19.451 40.106 19.451 40.106C17.8175 38.9885 19.5755 39.0125 19.5755 39.0125C21.383 39.1385 22.334 40.868 22.334 40.868C23.939 43.619 26.5445 42.824 27.572 42.3635C27.7325 41.201 28.199 40.406 28.715 39.9575C24.7175 39.5 20.5145 37.9565 20.5145 31.061C20.5145 29.0945 21.218 27.4895 22.3685 26.2295C22.1825 25.775 21.566 23.9435 22.544 21.4655C22.544 21.4655 24.056 20.9825 27.4955 23.3105C28.931 22.9115 30.47 22.712 32 22.7045C33.53 22.712 35.0705 22.9115 36.509 23.3105C39.9455 20.9825 41.4545 21.4655 41.4545 21.4655C42.434 23.945 41.8175 25.7765 41.6315 26.2295C42.7865 27.4895 43.484 29.096 43.484 31.061C43.484 37.9745 39.2735 39.497 35.2655 39.9425C35.9105 40.5005 36.5 41.5955 36.5 43.2755V48.215C36.5 48.6935 36.788 49.256 37.7015 49.079C44.849 46.6955 50 39.95 50 32C50 22.0595 41.9405 14 32 14Z"
+                        fill="#fff"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li class="contacts__list-item">
+                  <a
+                    href="https://t.me/alyanoyigor"
+                    class="contacts__list-link"
+                    target="_blank"
+                  >
+                    <svg
+                      width="64"
+                      height="64"
+                      viewBox="0 0 64 64"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M32 15C41.3889 15 49 22.6111 49 32C49 41.3889 41.3889 49 32 49C22.6111 49 15 41.3889 15 32C15 22.6111 22.6111 15 32 15ZM40.1823 24.3029L37.1494 39.5946C37.1494 39.5946 36.7252 40.655 35.5588 40.1458L28.581 34.6527C28.581 34.6527 36.3436 27.675 36.6616 27.3781C36.9797 27.0812 36.8737 27.0176 36.8737 27.0176C36.8948 26.657 36.301 27.0176 36.301 27.0176L26.0148 33.55L21.7306 32.1077C21.7306 32.1077 21.0731 31.8743 21.0095 31.3655C20.9459 30.8563 21.7518 30.5807 21.7518 30.5807L38.7827 23.8999C38.7827 23.8999 40.1823 23.2848 40.1823 24.3029ZM31.2434 36.8375L28.475 39.3615C28.475 39.3615 28.2585 39.5256 28.0218 39.4228L28.5519 34.7344L31.2434 36.8375Z"
+                        fill="#fff"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li class="contacts__list-item">
+                  <a
+                    href="https://www.instagram.com/alyanoyigor/"
+                    class="contacts__list-link"
+                    target="_blank"
+                  >
+                    <svg
+                      width="64"
+                      height="64"
+                      viewBox="0 0 64 64"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M46.91 25.816C46.837 24.219 46.584 23.129 46.213 22.175C45.83 21.189 45.317 20.352 44.483 19.518C43.649 18.684 42.813 18.171 41.826 17.788C40.872 17.417 39.781 17.164 38.185 17.091C36.585 17.017 36.074 17 32 17C27.926 17 27.415 17.017 25.816 17.09C24.219 17.163 23.129 17.416 22.175 17.787C21.189 18.17 20.352 18.683 19.518 19.517C18.684 20.351 18.171 21.187 17.788 22.174C17.417 23.128 17.164 24.219 17.091 25.815C17.017 27.415 17 27.926 17 32C17 36.074 17.017 36.585 17.09 38.184C17.163 39.781 17.416 40.871 17.787 41.825C18.17 42.811 18.683 43.648 19.517 44.482C20.351 45.316 21.187 45.829 22.174 46.212C23.128 46.583 24.219 46.836 25.815 46.909C27.415 46.983 27.926 47 32 47C36.074 47 36.585 46.983 38.184 46.91C39.781 46.837 40.871 46.584 41.825 46.213C42.811 45.83 43.648 45.317 44.482 44.483C45.316 43.649 45.829 42.813 46.212 41.826C46.583 40.872 46.836 39.781 46.909 38.185C46.983 36.585 47 36.074 47 32C47 27.926 46.983 27.415 46.91 25.816ZM44.21 38.061C44.143 39.523 43.899 40.318 43.694 40.846C43.422 41.546 43.097 42.046 42.572 42.571C42.047 43.096 41.547 43.421 40.847 43.693C40.318 43.898 39.524 44.143 38.062 44.209C36.481 44.281 36.006 44.296 32.001 44.296C27.996 44.296 27.521 44.281 25.94 44.209C24.478 44.142 23.683 43.898 23.155 43.693C22.455 43.421 21.955 43.096 21.43 42.571C20.905 42.046 20.58 41.546 20.308 40.846C20.103 40.317 19.858 39.523 19.792 38.061C19.72 36.479 19.705 36.005 19.705 32C19.705 27.995 19.72 27.52 19.792 25.939C19.859 24.477 20.103 23.682 20.308 23.154C20.58 22.454 20.905 21.954 21.43 21.429C21.955 20.904 22.455 20.579 23.155 20.307C23.684 20.102 24.478 19.857 25.94 19.791C27.522 19.719 27.996 19.704 32.001 19.704C36.006 19.704 36.481 19.719 38.062 19.791C39.524 19.858 40.319 20.102 40.847 20.307C41.547 20.579 42.047 20.904 42.572 21.429C43.097 21.954 43.422 22.454 43.694 23.154C43.899 23.683 44.144 24.477 44.21 25.939C44.282 27.521 44.297 27.995 44.297 32C44.297 36.005 44.282 36.48 44.21 38.061ZM32 24.297C27.746 24.297 24.297 27.746 24.297 32C24.297 36.254 27.746 39.703 32 39.703C36.254 39.703 39.703 36.254 39.703 32C39.703 27.746 36.254 24.297 32 24.297ZM32 37C29.239 37 27 34.761 27 32C27 29.239 29.239 27 32 27C34.761 27 37 29.239 37 32C37 34.761 34.761 37 32 37ZM40.007 22.193C39.013 22.193 38.207 22.999 38.207 23.993C38.207 24.987 39.013 25.793 40.007 25.793C41.001 25.793 41.807 24.987 41.807 23.993C41.807 22.999 41.001 22.193 40.007 22.193Z"
+                        fill="#fff"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li class="contacts__list-item">
+                  <a
+                    href="https://www.facebook.com/alyanoyigor"
+                    class="contacts__list-link"
+                    target="_blank"
+                  >
+                    <svg
+                      width="64"
+                      height="64"
+                      viewBox="0 0 64 64"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M34.1 47V33.3H38.7L39.4 28H34.1V24.6C34.1 23.1 34.5 22 36.7 22H39.5V17.2C39 17.1 37.3 17 35.4 17C31.3 17 28.5 19.5 28.5 24V28H24V33.3H28.6V47H34.1Z"
+                        fill="#fff"
+                      />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+              <a
+                href="mailto:igoralyanoy@gmail.com"
+                class="contacts__btn header__btn"
+                >Email me</a
+              >
             </div>
-         </div>
-      </footer>
-   </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <article class="footer__text">
+            <h4 class="footer__text-title">© 2021 by Igor Alyanoy</h4>
+            <a class="footer__link-img" href="https://github.com/alyanoyigor"
+              ><img
+                class="footer__img"
+                src="assets/svg/github.svg"
+                alt="GitHub"
+            /></a>
+          </article>
+          <a
+            href="https://rs.school/"
+            target="_blank"
+            class="rolling-scopes-link"
+            ><img src="assets/svg/rs_school_js.svg" alt="Rolling Scopes School"
+          /></a>
+          <div class="footer__menu">
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a href="#about-me" class="footer__menu-link">About me</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#education" class="footer__menu-link">Education</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#skills" class="footer__menu-link">Skills</a>
+              </li>
+            </ul>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a href="#work-experience" class="footer__menu-link"
+                  >Work experience</a
+                >
+              </li>
+              <li class="heder__footer__menu-item">
+                <a href="#contacts" class="footer__menu-link">Contacts</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
-   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-   <script src="js/app.js"></script>
-</body>
-
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
 </html>
