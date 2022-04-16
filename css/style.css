@@ -258,9 +258,13 @@ a {
   text-decoration: underline;
 }
 
+.education__img-container {
+  max-width: 400px;
+}
+
 .education__img {
   z-index: 1;
-  width: 400px;
+  width: 100%;
 }
 
 .main {
@@ -611,4 +615,8 @@ pre code.hljs {
     #66d9fb 100%
   );
   display: inline-block;
+}
+
+.slider {
+  overflow: hidden;
 }

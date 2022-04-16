@@ -17,12 +17,8 @@
   .title {
     font-size: 36px;
   }
-  .general-container {
+  body {
     background: linear-gradient(180deg, #000 25%, #fff 35%, #fff 60%, #000 77%);
-  }
-  .top-gradient-img {
-    margin-top: 200px;
-    transform: scale(1.4);
   }
 }
 @media (max-width: 900px) {
@@ -116,13 +112,17 @@
     padding-bottom: 20px;
   }
 
-
   .top-gradient {
-    top: 25%;
+    top: 100%;
   }
-  
+
+  .top-gradient-img,
+  .bottom-gradient-img {
+    height: 1000px;
+  }
+
   .bottom-gradient {
-    bottom: 30%;
+    bottom: 20%;
   }
 
   .contacts__box {
@@ -194,17 +194,11 @@
   }
   .top-gradient-img {
     margin-top: 0px;
-    transform: scale(1.4, 2.4);
   }
-  .general-container {
+  body {
     background: linear-gradient(180deg, #000 25%, #fff 30%, #fff 60%, #000 77%);
   }
   .education__description {
     display: none;
   }
-}
-@media (max-width: 350px) {
-  /* .top-gradient-img {
-		margin-top: 200px;
-	} */
 }
